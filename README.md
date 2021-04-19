@@ -26,5 +26,10 @@ Traverse the linked list. O(m+n) time, O(m+n) sapce.
 我还是使用了循环，试图找到所有可能的子集，然后逐个加入到集合中。方法就是使用循环，显得非常复杂。  
 答案使用的是迭代法，巧妙利用python中的列表合并符号 + ，逐个添加元素， 和已存在的列表做加法，然后再合并，效果非常好。参看：https://leetcode-cn.com/problems/subsets/solution/hui-su-suan-fa-by-powcai-5/ 思路二
 
+* 0046 全排列
+我感觉我有点进步，使用了递归来解决这个问题。 递归还是蛮考思维逻辑能力的全面性的。我的问题是，对定义闭包用的不熟悉，python传递参数是形参还是实参理解不透，如果是list要传递形参，必须要重新复制一个新变量。至此。用时1小时。  
+题解：可以使用DFS(深度优先遍历)，BFS（广度优先遍历），在这里DFS是更优的解法，即回溯算法，它更节约空间。参看：https://leetcode-cn.com/problems/permutations/solution/quan-pai-lie-by-leetcode-solution-2/  空间复杂度：O(n * n!), 时间复杂度：O(n!) 
+
 * 
+
 
